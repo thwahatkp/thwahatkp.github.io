@@ -402,15 +402,15 @@ function displayTime(){
 	var hour = dateTime.getHours();
 	var minutes = dateTime.getMinutes();
 	var second = dateTime.getSeconds();
-	var session = document.getElementsByClassName("session");
+	var session = document.getElementById("session");
 	//date
 	var day = dateTime.getDay();
 	var month = dateTime.getMonth();
 	var year = dateTime.getFullYear();
-	if(hrs >= 12){
-		session.innerHTML="AM";
-	}else{
+	if(hour >= 12){
 		session.innerHTML="PM";
+	}else{
+		session.innerHTML="AM";
 	}
     if (hour == 0) {
     hour = 12;
