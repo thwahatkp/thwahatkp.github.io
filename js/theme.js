@@ -408,9 +408,9 @@ function displayTime(){
 	var month = dateTime.getMonth();
 	var year = dateTime.getFullYear();
 	if(hrs >= 12){
-		session.innerHTML="PM";
-	}else{
 		session.innerHTML="AM";
+	}else{
+		session.innerHTML="PM";
 	}
     if (hour == 0) {
     hour = 12;
