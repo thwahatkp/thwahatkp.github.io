@@ -11,11 +11,19 @@
 
     <!-- Unicons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
-    <script type="module" crossorigin src="/assets/index-5759f5e6.js"></script>
-    <link rel="stylesheet" href="/assets/index-451ddc8e.css">
+    <script>
+      gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+      let smooter = ScrollSmoother.create({
+        wrapper: "#smooth-wrapper",
+        content: "#smooth-content",
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-f1d08847.js"></script>
+    <link rel="stylesheet" href="/assets/index-c0272b2d.css">
   </head>
   <body>
     <div id="root"></div>
     
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
   </body>
 </html>
